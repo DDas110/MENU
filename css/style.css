@@ -1,0 +1,73 @@
+@import url(resret.css);
+
+.container_menu {
+    width: 1200px;
+    margin: 0 auto 10px;
+    background: rgb(0, 81, 255);
+    padding: 10px 0;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;   
+}
+.menu > li {
+    text-transform: uppercase;
+    background: yellow;
+    position: relative;
+}
+
+.menu > li a {
+    text-decoration: none;
+    padding: 15px 25px;
+    color: black;
+    display: block;
+    font-weight: 500;
+}
+
+.menu > li:hover, .secondmenu > li:hover, .thirdmenu > li:hover {
+background: indigo;
+}
+
+.menu > li:active, .secondmenu > li:active, .thirdmenu > li:active {
+    background: black;
+    }
+
+.menu > li:hover .secondmenu {
+    display: block;
+}
+
+.secondmenu {
+    position: absolute;
+    top: 100% ;
+    right: 0;
+    display: none;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.secondmenu > li {
+    background: yellowgreen; 
+    margin-bottom: 15px;
+}
+
+.thirdmenu {
+    padding-top: 15px;
+    bottom: 15px;
+    right: 100%;
+    display: none;
+    position: absolute;
+}
+
+.thirdmenu > li {
+    background: yellow; 
+    margin-right: 15px;
+    white-space: nowrap;
+
+}
+
+.secondmenu > li:hover .thirdmenu {
+    display: block;
+}
